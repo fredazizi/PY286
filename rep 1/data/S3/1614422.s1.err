@@ -1,0 +1,5 @@
+time="2020-02-19T07:22:09-05:00" level=warning msg="\"/run/user/1589653\" directory set by $XDG_RUNTIME_DIR does not exist. Either create the directory or unset $XDG_RUNTIME_DIR.: stat /run/user/1589653: no such file or directory: Trying to pull image in the event that it is a public image."
+
+real	0m2.817s
+user	0m0.578s
+sys	0m0.796s

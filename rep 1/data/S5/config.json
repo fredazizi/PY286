@@ -1,0 +1,51 @@
+{
+    "parcellation": "aparc.a2009s",
+    "freesurfer": "../5e4c643e89b5982425383cd5/freesurfer/output",
+    "_inputs": [
+        {
+            "id": "freesurfer",
+            "task_id": "5e4c643e89b5982425383cd5",
+            "subdir": "freesurfer",
+            "meta": {
+                "subject": "010321",
+                "session": "01",
+                "acquisition": "mprage"
+            },
+            "tags": [],
+            "datatype": "58cb22c8e13a50849b25882e",
+            "datatype_tags": [
+                "crop_reorient",
+                "acpc_aligned",
+                "preprocessed"
+            ],
+            "keys": [
+                "freesurfer"
+            ]
+        }
+    ],
+    "_app": "5e31bea8b81ce26c2f9c9a88",
+    "_outputs": [
+        {
+            "id": "raw",
+            "datatype": "59c3eae633fc1cf9ead71679",
+            "desc": "Freesurfer Statistics",
+            "meta": {
+                "subject": "010321",
+                "session": "01",
+                "acquisition": "mprage"
+            },
+            "tags": [
+                "freesurfer-stats"
+            ],
+            "archive": {
+                "project": "5e3b32fc9362b74c9ff9848a",
+                "desc": ""
+            },
+            "files": null,
+            "datatype_tags": [
+                "freesurfer-stats"
+            ]
+        }
+    ],
+    "_tid": 52
+}

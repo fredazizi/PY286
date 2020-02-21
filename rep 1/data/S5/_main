@@ -1,0 +1,15 @@
+#!/bin/bash
+#PBS -l nodes=1:ppn=1
+#PBS -l vmem=16gb
+#PBS -l walltime=0:10:00
+#PBS -N app-freesurer-stats
+#PBS -V
+export SINGULARITY_LOCALCACHEDIR=$TMPDIR
+export SINGULARITYENV_MCR_CACHE_ROOT=$PWD
+[[ /N/dc2/scratch/brlife/carbonate-workflows/5e42d62040771e3aa53447e7/5e4d28fc87cac7d7c5a9ad4f == /N/dc2/* ]] && lfs setstripe -c 8 .
+
+smon &
+smonpid=$!
+./main
+echo $? > exit-code
+kill $smonpid
